@@ -1,1 +1,1 @@
-# c-languages
+# c++ languages
