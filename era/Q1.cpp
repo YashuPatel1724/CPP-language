@@ -2,28 +2,28 @@
 using namespace std;
 class Dis{
 	public :
-	int feet,inc,i,sum=0,sum1=0;
+	int feet1,feet2,inc1,inc2,i,sum=0,sum1=0;
 	
 	void input()
 	{
 		cout << "entre the feet : ";
-		cin >> feet;
+		cin >> feet1;
 		
 		cout << "entre the inc : ";
-		cin >> inc;
+		cin >> inc1;
 		
 		cout << "entre the feet : ";
-		cin >> feet;
+		cin >> feet2;
 		
 		cout << "entre the inc : ";
-		cin >> inc;
+		cin >> inc2;
 		
-		sum= feet+feet;
-		sum1=inc+inc;
+		sum= feet1+feet2; // 
+		sum1=inc1+inc2;
 	}
 	void output()
 	{
-		for(i=0; i<inc; i++)
+		for(i=0; i<sum1; i++)
 		{
 			if(sum1 >= 12)
 			{
