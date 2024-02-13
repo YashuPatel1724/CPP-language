@@ -37,7 +37,7 @@ class B : public A
 		cout << "entre the salary: ";
 		cin >> sal;
 		
-		cout << "entre the exp: ";
+		cout << "entre the exprience: ";
 		cin >> exp;
 	}
 };
@@ -50,6 +50,7 @@ class C : public B
 
 	void set()
 	{
+		B::set();
 		cin.ignore();
 		cout << "entre the company name: ";
 		getline(cin,comp_name);
@@ -76,6 +77,7 @@ class D : public C
 		public : 
 		void set()
 		{
+			C::set();
 			cout << "entre the email: ";
 			getline(cin,email);
 			
@@ -87,13 +89,9 @@ class D : public C
 		{
 			cout << "id is  : " << id << endl;
 			
-			cout << "name is " << name << endl;
-		
-			cout << "role is : " << role <<endl;
-		
-			cout << "salary is : " << sal <<endl;
+			C::get();
 			
-			cout << "exp is " << exp << endl;
+			cout << "exprience is " << exp << endl;
 		
 			cout << "com name is : " << comp_name <<endl;
 		
@@ -107,13 +105,6 @@ class D : public C
 
 int main()
 {
-	B b1;
-	b1.set();
-	
-	C c1;
-	c1.set();
-	c1.get();
-	
 	D d1;
 	d1.set();
 	d1.get();
